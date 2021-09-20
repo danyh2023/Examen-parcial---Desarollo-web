@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orden de Compra</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+</head>
+
+<body class="container">
+    <header>
+        <div>
+            <img src="/img/Logo.PNG">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto color">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							  Productos
+							</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="nav-link" href="ingresoProductos.html">Agregar</a>
+                            <a class="nav-link" href="mostrarProductos.html">Mostrar productos</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							  Ordenes de compra
+							</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="nav-link" href="ordenCompra.html">Crear orden</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <b> <a class="nav-link" href="stock.html">Stock</a></b>
+                    </li>
+                </ul>
+            </div>
+            </nav>
+            <hr>
+            <h2>Orden de Compra</h2>
+            <hr>
+        </div>
+        </div>
+    </header>
+    <div class="container">
+        <form action="">
+            <label>My super gamer store</label>
+            <hr>
+            <label>tel: 4588-9988</label>
+            <hr>
+            <label>Guatemala, Guatemala</label>
+            <hr>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card" style="width: 100%;">
+                        <div class="card-footer">
+                            <label> Numero de orden Orden</label>
+                            <input type="number" class="form-control" id="idOrden" name="txtOrden">
+                            <label for="fechaE">Fecha Entrega </label>
+                            <input type="date" class="form-control" id="fechaE" name="txtFechaE">
+                            <label for="idProv">Nit de proveedor</label>
+                            <input type="number" class="form-control" id="idProv" name="txtProv">
+                            <label for="idProd">Id Producto</label>
+                            <input type="number" class="form-control" id="idProd" name="txtProd">
+                            <label for="cantP">Cantidad</label>
+                            <input type="number" class="form-control" id="cantP" name="txtCantP">
+                            <input type="button" value="Agregar " class="btn btn-success btnoc mt-2 float-right" onclick="AgregarOC()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+    </div>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Codigo</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Subtotal</th>
+            </tr>
+        </thead>
+        <tbody id="tablaProductosBody"></tbody>
+        </tbody>
+    </table>
+    <input type="button" value="Nueva Orden" class="btn btn-success btnoc" onclick="ordenNueva()">
+    </form>
+    </div>
+    <script src="/js/script.js"></script>
+    <footer class="container">
+        <center>
+            <ul>Todos los derechos reservados por los desarolladores @miumg2021
+                <h5>Mi store gt guatemala</h5>
+            </ul>
+        </center>
+    </footer>
+</body>
+
+</html>

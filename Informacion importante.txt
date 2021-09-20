@@ -1,0 +1,3 @@
+Nota.
+El proyecto genera algunos errores al abrirlo directamente desde el navegador, no encontre el error o por que sucede esto  (LAS IMAGENES Y LOS LINK NO APARECEN). 
+La solucion es abrirlo desde el LIVE SERVER de VISUAL STUDIO CODE (FUNCIONA CORRECTAMENTE).
